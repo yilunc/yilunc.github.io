@@ -1,0 +1,109 @@
+<!DOCTYPE html> <html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1,  minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="jquery.touchSwipe.js"></script>
+  <link rel="stylesheet" type="text/css" href="bariol/stylesheet.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="//assets.ziggeo.com/css/ziggeo-betajs-player.min.css" />
+  <script src="//assets.ziggeo.com/js/ziggeo-jquery-json2-betajs-player.min.js"></script>
+  <script>ZiggeoApi.token = "68b4f0c3abfd5d42e609e58465983ff9";</script>
+</head>
+<body>
+  <div id="loading">
+    <div id="loading-logo"></div>
+  </div>
+  <div id="navbar">
+    <a id="nav1" class="menu" href="#" onclick="doSomething(1)"></a>
+    <a id="nav2" class="updog-alt" href="#" onclick="doSomething(2)"></a>
+    <a id="nav3" class="pen" href="#" onclick="doSomething(3)"></a>
+  </div>
+  <div class="content" id="content1">
+    <p id="header"> My Posts </p>
+    <div class="post" id="first-post">
+      <div class="post-content"></div>
+      <div class="post-results">
+        <div class="like"></div>
+        <p> 32 </p>
+      </div>
+    </div>
+    <div class="post">
+      <div class="post-content"></div>
+      <div class="post-results">
+        <div class="dislike"></div>
+        <p class="red"> 8 </p>
+      </div>
+    </div>
+    <div class="post">
+      <div class="post-content"></div>
+      <div class="post-results">
+        <div class="dislike"></div>
+        <p class="red"> 4 </p>
+      </div>
+    </div>
+    <div class="post">
+      <div class="post-content"></div>
+      <div class="post-results">
+        <div class="like"></div>
+        <p> 22 </p>
+      </div>
+    </div>
+  </div>
+  <div class="content" id="content2">
+    <div class="card-container" id="card-main">
+      <div class="card">
+        <div class="upvote" onclick="newCardUp(0)">
+        </div>
+        <div class="media" id="media-main">
+          <div class="sound"></div>
+          <div class="title"> Doge LOLOLOLO! </div>
+        </div>
+        <div class="downvote" onclick="newCardDown(0)">
+        </div>
+      </div>
+    </div>
+    <div class="card-container" id="card-alt">
+      <div class="card">
+        <div class="upvote" onclick="newCardUp(1)">
+        </div>
+        <div class="media" id="media-alt">
+          <div class="sound"></div>
+          <div class="title"> Doge is the best! </div>
+        </div>
+        <div class="downvote" onclick="newCardDown(1)">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content" id="content3">
+    <!--<input type="text" id="title-input">
+    <div class="sound" id="sound-input"></div>-->
+    <div id="camera-feed">
+    </div>
+    <ziggeo 
+        ziggeo-width=320
+        ziggeo-height=508
+        ziggeo-perms='allowupload'
+        ziggeo-limit = 120
+        ziggeo-disable_first_screen
+        ziggeo-disable_device_test
+        ziggeo-disable_timer>
+    </ziggeo>
+    <div id="camera-footer">
+      <div id="video" onclick="swapZiggeo()"></div>
+      <div id="camera" onclick="submit()"></div>
+      <div id="play" onclick="play()"></div>
+      <div id="stop" onclick="stop()"></div>
+      <div id="upload" onclick="swapCamera()"></div>
+    </div>
+    <div id="submit-bg">
+      <div id="submit-container">
+        <input type="text" id="title-input" placeholder="Caption">
+        <input id="submit" onclick="cancel()" type="submit" value="Submit">
+        <input id="cancel" onclick="cancel()" value="Cancel" readonly>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
