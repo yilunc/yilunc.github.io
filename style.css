@@ -471,4 +471,6 @@ p {
   font-family: 'bariol_bold', sans-serif;
   font-size: 24px;
   text-align: center;
+  box-sizing: border-box;
+  border-right: 1px solid #aaaaaa;
 }
