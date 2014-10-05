@@ -445,7 +445,7 @@ p {
 
 #submit {
   display: block;
-  background: #000;
+  background: #fff;
   border: none;
   float: left;
   border-bottom-left-radius: 16px;
@@ -466,7 +466,7 @@ p {
   float: left;
   border-bottom-right-radius: 16px;
   height: 60px;
-  width: 137px;
+  width: 138px;
   color: #e94342;
   font-family: 'bariol_bold', sans-serif;
   font-size: 24px;
